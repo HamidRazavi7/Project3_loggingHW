@@ -1,0 +1,4 @@
+2022-04-18 22:27:16,622 [INFO] werkzeug: 172.23.0.1 - - [18/Apr/2022 22:27:16] "[33mGET /MFAwTjBMMEowSDAHBgUrDgMCGgQUq%2FN3sict544Y1aZ+WxKX3OjF2sEEFDrhCYbUzxnClnZ0SXbc4DXGY2OaAhEA82ROa24AUCN+CUa9e+H1HQ%3D%3D HTTP/1.1[0m" 404 -
+2022-04-18 22:29:12,924 [INFO] werkzeug:  * Detected change in '/home/myuser/app/__init__.py', reloading
+2022-04-18 22:53:10,118 [INFO] werkzeug: 172.23.0.1 - - [18/Apr/2022 22:53:10] "GET / HTTP/1.1" 200 -
+2022-04-18 22:55:00,608 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 22:55:00] "GET / HTTP/1.1" 200 -
