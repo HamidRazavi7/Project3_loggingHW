@@ -2,3 +2,15 @@
 2022-04-18 22:29:12,924 [INFO] werkzeug:  * Detected change in '/home/myuser/app/__init__.py', reloading
 2022-04-18 22:53:10,118 [INFO] werkzeug: 172.23.0.1 - - [18/Apr/2022 22:53:10] "GET / HTTP/1.1" 200 -
 2022-04-18 22:55:00,608 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 22:55:00] "GET / HTTP/1.1" 200 -
+2022-04-18 23:08:41,748 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:08:41] "GET / HTTP/1.1" 200 -
+2022-04-18 23:08:49,311 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:08:49] "GET / HTTP/1.1" 200 -
+2022-04-18 23:08:51,727 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:08:51] "GET /register HTTP/1.1" 200 -
+2022-04-18 23:09:35,715 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:09:35] "[32mPOST /register HTTP/1.1[0m" 302 -
+2022-04-18 23:09:35,743 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:09:35] "GET /login HTTP/1.1" 200 -
+2022-04-18 23:09:44,868 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:09:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2022-04-18 23:09:44,915 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:09:44] "GET /dashboard HTTP/1.1" 200 -
+2022-04-18 23:11:59,119 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:11:59] "GET /profile HTTP/1.1" 200 -
+2022-04-18 23:12:01,551 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:12:01] "GET /account HTTP/1.1" 200 -
+2022-04-18 23:12:06,203 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:12:06] "GET /welcome HTTP/1.1" 200 -
+2022-04-18 23:12:07,274 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:12:07] "GET /users HTTP/1.1" 200 -
+2022-04-18 23:12:07,365 [INFO] werkzeug: 172.24.0.1 - - [18/Apr/2022 23:12:07] "GET /bootstrap/static/icons/bootstrap-icons.svg HTTP/1.1" 200 -
