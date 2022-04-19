@@ -129,10 +129,13 @@ def create_app():
         for name, value in log_params:
             part = name + ': ' + str(value) + ', '
             parts.append(part)
-        line = " ".join(parts)
+        log_message = " ".join(parts)
         #this triggers a log entry to be created with whatever is in the line variable
-        app.logger.info('this is the log message')
-
+        app.logger.info('log_message')
+        app.logger.error('log_message')
+        app.logger.debug('log_message')
+        app.logger.warning('log_message')
+        app.logger.critical('log_message')
         return response
 
     return app
