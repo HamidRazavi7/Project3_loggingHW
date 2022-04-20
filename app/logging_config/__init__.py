@@ -12,8 +12,8 @@ log_con = flask.Blueprint('log_con', __name__)
 @log_con.before_app_request
 def before_request_logging():
     current_app.logger.info("Before Request")
-    log = logging.getLogger("myApp")
-    log.info("My App Logger")
+    log = logging.getLogger("debug")
+    log.info("Debug Log")
 
 
 @log_con.after_app_request
@@ -26,18 +26,18 @@ def after_request_logging(response):
         return response
     current_app.logger.info("After Request")
 
-    log = logging.getLogger("myApp")
-    log.info("My App Logger")
+    log = logging.getLogger("debug")
+    log.info("Debug Log")
     return response
 
 
 @log_con.before_app_first_request
 def configure_logging():
     logging.config.dictConfig(LOGGING_CONFIG)
-    log = logging.getLogger("myApp")
-    log.info("My App Logger")
-    log = logging.getLogger("myerrors")
-    log.info("THis broke")
+    log = logging.getLogger("debug")
+    log.info("Debug Log")
+    log = logging.getLogger("mydebug")
+    log.info("debug run")
 
 
 
@@ -104,6 +104,13 @@ LOGGING_CONFIG = {
             'maxBytes': 10000000,
             'backupCount': 5,
         },
+        'file.handler.debug': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'standard',
+            'filename': 'app/logs/debug.log',
+            'maxBytes': 10000000,
+            'backupCount': 5,
+        },
     },
     'loggers': {
         '': {  # root logger
@@ -131,6 +138,11 @@ LOGGING_CONFIG = {
             'level': 'DEBUG',
             'propagate': False
         },
+        'debug': {  # if __name__ == '__main__'
+        'handlers': ['file.handler.debug'],
+        'level': 'DEBUG',
+        'propagate': False
+        },
         'myerrors': {  # if __name__ == '__main__'
             'handlers': ['file.handler.errors'],
             'level': 'DEBUG',
@@ -139,3 +151,4 @@ LOGGING_CONFIG = {
 
     }
 }
+
