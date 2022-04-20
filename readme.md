@@ -1,4 +1,4 @@
-# Project Setup:
+# Project Setup
 
 My Website: https://loggingprod.herokuapp.com/
 
