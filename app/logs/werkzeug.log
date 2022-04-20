@@ -122,3 +122,5 @@
 2022-04-20 02:57:35,153 [INFO] werkzeug: 172.26.0.1 - - [20/Apr/2022 02:57:35] "GET /dashboard HTTP/1.1" 200 -
 2022-04-20 02:57:35,983 [INFO] werkzeug: 172.26.0.1 - - [20/Apr/2022 02:57:35] "GET /welcome HTTP/1.1" 200 -
 2022-04-20 03:01:55,325 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/click_test.py', reloading
+2022-04-20 03:10:02,669 [INFO] werkzeug: 172.26.0.1 - - [20/Apr/2022 03:10:02] "GET /users HTTP/1.1" 200 -
+2022-04-20 03:10:02,717 [INFO] werkzeug: 172.26.0.1 - - [20/Apr/2022 03:10:02] "[36mGET /bootstrap/static/icons/bootstrap-icons.svg HTTP/1.1[0m" 304 -
