@@ -15,7 +15,9 @@ def create_database():
     # make a directory if it doesn't exist
     if not os.path.exists(dbdir):
         os.mkdir(dbdir)
+        # creates the database folder
     db.create_all()
+    #creates the database file
 
 
 @click.command(name='create-log-folder')

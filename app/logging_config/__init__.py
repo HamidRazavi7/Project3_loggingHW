@@ -130,7 +130,7 @@ LOGGING_CONFIG = {
         },
         'sqlalchemy.engine': {  # if __name__ == '__main__'
             'handlers': ['file.handler.sqlalchemy'],
-            'level': 'INFO',
+            'level': 'DEBUG',
             'propagate': False
         },
         'myApp': {  # if __name__ == '__main__'
